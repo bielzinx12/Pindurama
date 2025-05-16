@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Línguas Indígenas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PROJETO PINDURAMA</h1>
+        <H2>APP DE LÍNGUAS INDÍGENAS</H2>
+        <img src="./images/WhatsApp Image 2025-05-12 at 8.10.43 PM.jpeg" alt="" srcset="">
+        <p>Qual Língua Você Quer Aprender?</p>
+    </header>
+    <header class="linguas">
+        <div class="lingua-item">
+            <img src="./images/WhatsApp Image 2025-05-12 at 8.16.31 PM (1).jpeg" alt="">
+            <p class="p2">Tupi Antigo</p>
+            <a href="./paginas/tupi.html" class="lingua-btn">Aprender</a>
+        </div>
+        <div class="lingua-item">
+            <img src="./images/WhatsApp Image 2025-05-12 at 8.11.13 PM.jpeg" alt="">
+            <p class="p2">Nheengatu</p>
+            <a href="./paginas/nheengatu.html" class="lingua-btn">Aprender</a>
+        </div>
+        <div class="lingua-item">
+            <img src="./images/WhatsApp Image 2025-05-12 at 8.16.31 PM.jpeg" alt="">
+            <p class="p2">Tukano</p>
+            <a href="./paginas/tukano.html" class="lingua-btn">Aprender</a>
+        </div>
+    </header>
+    <style>
+        header img {
+            width: 10%;
+            height: 30;
+            display: block;
+            margin: 0 auto;
+        
+        }
+        header h1 {
+            text-align: center;
+            color: #ffffff;
+            padding: 40px;
+        }
+        header h2 {
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+        }
+        header p {
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+            font-size: 20px;
+        }
+        body {
+            background-color: #1d7151;
+            margin: 0;
+            padding: 0;
+        }
+        .linguas {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+            
+        }
+        .lingua-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .lingua-item img {
+            width: 120px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+        .p2 {
+            text-align: center;
+            color: #ffffff;
+            padding: 8px 0 0 0;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 4px #00000080;
+            
+        }
+        .lingua-btn {
+            margin-top: 10px;
+            padding: 8px 20px;
+            background-color: #ffe082;
+            color: #1d7151;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 2px 6px #00000030;
+            transition: background 0.2s, color 0.2s;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+        }
+        .lingua-btn:hover {
+            background-color: #ffd54f;
+            color: #14523a;
+        }
+    </style>
+</body>
+</html>
