@@ -10,8 +10,8 @@
     <header>
         <h1>TAREFA 1</h1>
         <img src="/images/brasil.jpg" alt="" srcset="">
-        <button onclick="document.getElementById('audio-brasil').play()" class="lingua-btn">Ouvir Brasil</button>
-        <audio id="audio-brasil" src="/audios/AUD-20250525-WA0026.mp3"></audio>
+        <button onclick="document.getElementById('audio-brasil').play()" class="lingua-btn">Ouvir Pindurama</button>
+        <audio id="audio-brasil" src="/audios/AUD-20250525-WA0027.mp3"></audio>
     </header>
     <header class="linguas">
     </header>
@@ -131,6 +131,10 @@
         <p id="mensagem"></p>
     </div>
 
+    <button id="btnProxima" class="proxima-tarefa-btn" onclick="window.location.href='Tarefa2.html'" disabled>
+        Próxima tarefa
+    </button>
+
     <button class="proxima-tarefa-btn" onclick="window.location.href='../nheengatu.html'">
         HOME
     </button>
@@ -139,12 +143,15 @@
     function verificarResposta() {
         const resposta = document.getElementById('resposta').value.trim().toLowerCase();
         const mensagem = document.getElementById('mensagem');
+        const btnProxima = document.getElementById('btnProxima');
         if (resposta === 'brasil') {
             mensagem.textContent = 'Você acertou!';
             mensagem.style.color = '#00ff00';
+            btnProxima.disabled = false;
         } else {
             mensagem.textContent = 'Tente novamente!';
             mensagem.style.color = 'red';
+            btnProxima.disabled = true;
         }
     }
     </script>

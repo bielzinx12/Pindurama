@@ -131,20 +131,27 @@
         <p id="mensagem"></p>
     </div>
 
-    <button class="proxima-tarefa-btn" onclick="window.location.href='../nheengatu.html'">
+    <button class="proxima-tarefa-btn" style="right: 250px;" onclick="window.location.href='../nheengatu.html'">
         HOME
     </button>
+    <button id="btnProxima" class="proxima-tarefa-btn" onclick="window.location.href='tarefa3.html'" disabled>
+        Próxima tarefa
+    </button>
+
 
     <script>
     function verificarResposta() {
         const resposta = document.getElementById('resposta').value.trim().toLowerCase();
         const mensagem = document.getElementById('mensagem');
+        const btnProxima = document.getElementById('btnProxima');
         if (resposta === 'mulher') {
             mensagem.textContent = 'Você acertou!';
             mensagem.style.color = '#00ff00';
+            btnProxima.disabled = false;
         } else {
             mensagem.textContent = 'Tente novamente!';
             mensagem.style.color = 'red';
+            btnProxima.disabled = true;
         }
     }
     </script>
